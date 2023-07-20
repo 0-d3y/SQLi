@@ -1,14 +1,18 @@
-try:
-  import os
-  import requests 
-  import re 
-  import random
-  import threading
-  import platform
-  import webbrowser
+import os
 
-except:
-  os.system()
+try:  import requests
+except: os.system('pip install requests')
+try:  import re 
+except: os.system('pip install re')
+try:  import random
+except: os.system('pip install random2')
+try:  import threading
+except: os.system('pip install threading2')
+try:  import platform
+except: os.system('pip install lib-platform')
+try:  import webbrowser
+except: os.system('pip install pycopy-webbrowser')
+
 uname = []
 lists = []
 page = open("dork.txt",'r').read().splitlines()
